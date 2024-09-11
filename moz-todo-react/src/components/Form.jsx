@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Form() {
+function Form(props) {
+
+    const [name, setName] = useState("");
+
     function handleSubmit(event) {
         event.preventDefault();
-        alert("Hello World!");
+        props.addTask(name);
+        setName("");
 
     }
+
+    function handleChange(event) {
+        setName(event.target.value);
+    }
+
+
+
 
     return (
         <form onSubmit={handleSubmit}>
@@ -20,6 +31,8 @@ function Form() {
                 className="input input__lg"
                 name="text"
                 autoComplete="off"
+                value={name}
+                onChange={handleChange}
             />
             <button type="submit" className="btn btn__primary btn__lg">
                 Add
