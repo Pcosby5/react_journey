@@ -11,11 +11,10 @@ function Form(props) {
 
     }
 
+
     function handleChange(event) {
         setName(event.target.value);
     }
-
-
 
 
     return (
@@ -25,6 +24,7 @@ function Form(props) {
                     What needs to be done?
                 </label>
             </h2>
+
             <input
                 type="text"
                 id="new-todo-input"
@@ -34,6 +34,7 @@ function Form(props) {
                 value={name}
                 onChange={handleChange}
             />
+
             <button type="submit" className="btn btn__primary btn__lg">
                 Add
             </button>
