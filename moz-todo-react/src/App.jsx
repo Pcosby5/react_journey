@@ -38,6 +38,20 @@ const [tasks, setTasks] = useState(props.tasks);
     setTasks(tasksLeftArray)
   }
 
+  function editTask (id, newName) {
+    const editedTaskList = tasks.map((task) => {
+      if(id === task.id) {
+        return {...task, name: newName};
+      }
+      return task;
+
+    });
+
+    setTasks(editedTaskList);
+
+
+  }
+
   const taskList = tasks?.map((task) => (
     <Todo id={task.id}
       name={task.name}
@@ -45,6 +59,7 @@ const [tasks, setTasks] = useState(props.tasks);
       key={task.id}
       toggleCompleteTask={toggleCompleteTask}
       deleteTask={deleteTask}
+      editTask={editTask}
     />
   ));
 
