@@ -2,6 +2,7 @@ import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo";
 import { useState } from "react";
+import { nanoid } from "nanoid";
 
 
 
@@ -12,7 +13,7 @@ const [tasks, setTasks] = useState(props.tasks);
 
   function addTask(name) {
     // alert(name);
-    const newTask = {id: "id", name, completed: false};
+    const newTask = {id: `todo-${(nanoid ())}`, name, completed: false};
     setTasks([...tasks, newTask]);
   }
 
@@ -23,6 +24,9 @@ const [tasks, setTasks] = useState(props.tasks);
       key={task.id}
     />
   ));
+
+  const tasksNouns = taskList.length !==1 ? "tasks" : "task";
+  const headingText = `${taskList.length} ${tasksNouns} remaining`;
 
   return (
     <div className="todoapp stack-large">
@@ -37,15 +41,13 @@ const [tasks, setTasks] = useState(props.tasks);
 
       </div>
 
-      <h2 id="list-heading">3 tasks remaining</h2>
+      <h2 id="list-heading">{headingText}</h2>
 
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading">
-        {/* <Todo name="Eat" id="todo-0" completed />
-        <Todo name="Sleep" id="todo-1" />
-        <Todo name="Repeat" id="todo-2" /> */}
+
         {taskList}
 
       </ul>
