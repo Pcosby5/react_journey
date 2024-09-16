@@ -19,6 +19,13 @@ function Hero() {
         <div className="icon"><i className="uil uil-twitter-alt"></i></div>
         <div className="icon"></div>
       </div>
+
+      <div className="hero-image">
+        <div className="image">
+            <img src="" alt=""></img>
+        </div>
+
+      </div>
     </section>
   );
 }
