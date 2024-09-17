@@ -17,7 +17,6 @@ function Hero() {
         <div className="icon"><i className="uil uil-linkedin-alt"></i></div>
         <div className="icon"><i className="uil uil-github-alt"></i></div>
         <div className="icon"><i className="uil uil-twitter-alt"></i></div>
-        <div className="icon"></div>
       </div>
 
       <div className="hero-image">
