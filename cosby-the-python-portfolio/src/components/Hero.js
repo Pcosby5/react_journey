@@ -20,8 +20,8 @@ function Hero() {
           </div>
 
           <div className="hero-text-btn">
-            <button className="hero-btn">Explore My Work</button>
-            <button className="hero-btn">My resume<i className="uil uil-file"></i>
+            <button className="btn">Explore My Work</button>
+            <button className="btn">My resume<i className="uil uil-file"></i>
             </button>
           </div>
 
@@ -36,7 +36,7 @@ function Hero() {
 
           <div className="hero-image">
             <div className="image">
-                <img src="" alt=""></img>
+                <img src="assets/image/upwork.jpg" alt="hero-logo"></img>
             </div>
           </div>
         </div>

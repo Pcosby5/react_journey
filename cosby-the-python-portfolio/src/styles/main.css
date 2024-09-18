@@ -54,3 +54,7 @@ html {
 .wrapper {
     padding-inline: 10vw;
 }
+
+.section {
+    padding-block: 5em;
+}

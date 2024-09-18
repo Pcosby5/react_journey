@@ -11,7 +11,7 @@ nav {
     height: 90px;
     line-height: 100px;
     background: var(--nav-color);
-    padding-inline: 10wv;
+    padding-inline: 10vw;
     transition: 0.3s;
     z-index: 100;
 
@@ -66,8 +66,9 @@ nav ul li {
     height: 2px;
     background: var(--first-color);
 }
+
 .nav-menu-btn {
-    display: flex;
+    display: none;
 }
 
 .nav-menu-btn i {
