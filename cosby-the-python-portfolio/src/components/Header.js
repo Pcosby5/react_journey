@@ -1,27 +1,35 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';  // Optional: for adding custom styles
 
 function Header() {
   return (
-    <header>
-      <nav>
-        <div className='nav_logo'>
-            <p>CosbyThePython!</p>
+    <header className="container">
+      <nav id="header">
+        <div className='nav-logo'>
+            <p className="nav-name">CosbyThePython!</p>
         </div>
-        <ul className='nav_menu_list'>
-          <li>
-            <Link to="/" className='nav_list'>Home</Link>
-          </li>
-          <li>
-            <Link to="/projects" className='nav_list'>Projects</Link>
-          </li>
-          <li>
-            <Link to="/about" className='nav_list'>About</Link>
-          </li>
-          <li>
-            <Link to="/contact" className='nav_list'>Contact</Link>
-          </li>
-        </ul>
+
+        <div className="nav-menu" id="myNavMenu">
+          <ul className='nav_menu_list'>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) => isActive ? 'nav_list active-link' : 'nav_list'}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/projects" className='nav_list'>Projects</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className='nav_list'>About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className='nav_list'>Contact</NavLink>
+            </li>
+          </ul>
+        </div>
 
         {/* dark mode */}
         <div className="mode">
@@ -34,6 +42,7 @@ function Header() {
         <div className='nav-menu-btn'>
             <i className='uil uil-bars' ></i>
         </div>
+
       </nav>
     </header>
   );
