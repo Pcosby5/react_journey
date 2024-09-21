@@ -11,20 +11,18 @@ function Hero() {
           </div>
 
           <div className="hero-name">
-            <span className="typedText"></span>
+            <span className="typedText">Prince Eugene Ofosu</span> {/* Temporary placeholder */}
           </div>
 
           <div className="hero-text-info">
-            <p>Prince Eugene Ofosu, I'm a web-developer with 2+ years of experience</p>
+            <p>A web developer with 2+ years of experience</p>
             <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
           </div>
 
           <div className="hero-text-btn">
             <button className="btn">Explore My Work</button>
-            <button className="btn">My resume<i className="uil uil-file"></i>
-            </button>
+            <button className="btn">My Resume <i className="uil uil-file"></i></button>
           </div>
-
 
           <div className="social_icons">
             <div className="icon_circle"></div>
@@ -36,13 +34,10 @@ function Hero() {
 
           <div className="hero-image">
             <div className="image">
-                <img src="assets/image/upwork.jpg" alt="hero-logo"></img>
+              <img src="../assets/image/upwork.jpg" alt="hero-logo"></img>
             </div>
           </div>
         </div>
-
-
-
       </section>
     </main>
   );
