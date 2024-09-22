@@ -1,9 +1,9 @@
 import React from 'react';
-import './Hero.css';  // Ensure this path is correct
+import './Hero.css';
 
 function Hero() {
   return (
-    <main className="hero-wrapper">
+    <main className="wrapper">
       <section className="hero" id="home">
         <div className="hero-content">
 
@@ -28,7 +28,7 @@ function Hero() {
 
 
             <div className="social-icons">
-              <div className="icon_circle"></div>
+              {/* <div className="icon_circle"></div> */}
               <div className="icon"><i className="uil uil-instagram"></i></div>
               <div className="icon"><i className="uil uil-linkedin-alt"></i></div>
               <div className="icon"><i className="uil uil-github-alt"></i></div>
