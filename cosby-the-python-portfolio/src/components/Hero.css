@@ -6,7 +6,7 @@
   background-color: #fff;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
 }
 
 /* Content is split into two parts */
@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
 }
 
 /* Left side for the image */
@@ -28,7 +29,7 @@
 .image-section img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 12px 12px;
 }
 
 /* Right side for the text */
@@ -37,11 +38,20 @@
   padding: 0 20px;
 }
 
+.hello {
+  margin-top: 30px;
+}
+
 /* Styling for the 'Heya, I'm' text */
 .hello p {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 10px;
+  font-family: cursive;
+}
+
+.hero-name {
+  margin-bottom: 20px;
 }
 
 /* Name styling */
@@ -50,6 +60,8 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
+  font-family: cursive;
+  color: #23272a;
 }
 
 /* Additional info text styling */
@@ -61,7 +73,8 @@
 
 /* Button container */
 .hero-text-btn {
-  margin-top: 20px;
+  margin-top: 40px;
+  display: flex;
 }
 
 .btn {
@@ -84,19 +97,22 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
   /* background-color: #0056b3; */
   width: 100%;
   padding: 10px;
   height: 100px;
 
-}
 
+}
+/* Items in the social icons container */
 .social-icons i{
   /* color: #fff; */
   font-size: 2.5rem;
   margin-right: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
+
 }
 
 

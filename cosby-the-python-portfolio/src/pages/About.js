@@ -1,8 +1,11 @@
+import React from 'react'
+import '../styles/about.css'
+
 export default function About() {
   return (
-
-      <main className="wrapper">
-        <section className="section" id="about">
+    <main className="wrapper">
+      <section className="section" id="about">
+        <div className="about-container">
           <div className="top-header">
             <h1>About me</h1>
           </div>
@@ -11,8 +14,8 @@ export default function About() {
             <div className="col">
               <div className="about-info">
                 <figure className="about-me">
+                  <img src="../assets/image/profile.jpeg" alt="Profile" className="profile" />
                   <figcaption>
-                    <img src="" alt="" className="profile"></img>
                     <h1>Web developer</h1>
                     <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
                   </figcaption>
@@ -22,10 +25,10 @@ export default function About() {
             </div>
           </div>
 
-          <div className="skils">
+          <div className="skills">
             <div className="skill-box">
               <span className="title">HTML</span>
-              <div className="skill-bar ">
+              <div className="skill-bar">
                 <span className="skill-per html">
                   <span className="tool-tip">90%</span>
                 </span>
@@ -44,7 +47,7 @@ export default function About() {
             <div className="skill-box">
               <span className="title">JAVASCRIPT</span>
               <div className="skill-bar">
-                <span className="skill-per JS">
+                <span className="skill-per js">
                   <span className="tool-tip">80%</span>
                 </span>
               </div>
@@ -52,8 +55,8 @@ export default function About() {
 
             <div className="skill-box">
               <span className="title">CSS</span>
-              <div className="skill-bar ">
-                <span className="skill-per CSS">
+              <div className="skill-bar">
+                <span className="skill-per css">
                   <span className="tool-tip">75%</span>
                 </span>
               </div>
@@ -61,15 +64,15 @@ export default function About() {
 
             <div className="skill-box">
               <span className="title">GIT</span>
-              <div className="skill-bar ">
+              <div className="skill-bar">
                 <span className="skill-per git">
                   <span className="tool-tip">95%</span>
                 </span>
               </div>
             </div>
-
           </div>
-        </section>
+        </div>
+      </section>
     </main>
-  )
+  );
 }
