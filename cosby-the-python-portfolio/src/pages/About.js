@@ -14,8 +14,8 @@ export default function About() {
             <div className="col">
               <div className="about-info">
                 <figure className="about-me">
-                  <img src="../assets/image/profile.jpeg" alt="Profile" className="profile" />
                   <figcaption>
+                    <img src="../assets/image/profile.jpe" alt="Profile" className="profile" />
                     <h1>Web developer</h1>
                     <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
                   </figcaption>
