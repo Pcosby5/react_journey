@@ -5,10 +5,10 @@ export default function About() {
   return (
     <main className="wrapper">
       <section className="section" id="about">
-        <div className="about-container">
-          <div className="top-header">
+
+        <div className="top-header">
             <h1>About me</h1>
-          </div>
+        </div>
 
           <div className="row">
             <div className="col">
@@ -70,7 +70,6 @@ export default function About() {
                 </span>
               </div>
             </div>
-          </div>
         </div>
       </section>
     </main>
