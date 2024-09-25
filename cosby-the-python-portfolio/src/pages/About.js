@@ -16,9 +16,9 @@ export default function About() {
             <div className="about-info">
               <figure className="about-me">
                 <figcaption>
-                  <img src="/assets/image/profile.jpe" alt="Profile" className="profile" />
+                  <img src="/assets/image/upwork.jpg" alt="Profile" className="profile" />
                   <h1>Web Developer</h1>
-                  <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+                  <p>I am a Full stack web developer learning React</p>
                 </figcaption>
               </figure>
               <button className="about-me-btn">Hire Me</button>

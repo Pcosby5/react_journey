@@ -54,8 +54,8 @@ html {
 h1 {
     margin-top: 2em;
 }
-
-/* General wrapper to position everything */
+/*
+General wrapper to position everything
 .wrapper {
     display: flex;
     justify-content: center;
@@ -63,7 +63,26 @@ h1 {
     height: 100vh;
     background-color: #f5f5f5;
     padding-inline: 2.5vw;
+
+} */
+
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    text-align: center;
+    left: 4%;
+
+    /*
+
+
+
+     */
 }
+
 
 .section {
     padding-block: 5em;
