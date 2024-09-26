@@ -26,54 +26,61 @@ export default function About() {
           </div>
 
           {/* Skills section inside the same row */}
-          <div className="col">
-            <div className="skills">
-              <div className="skill-box">
-                <span className="title">HTML</span>
-                <div className="skill-bar">
-                  <span className="skill-per html">
-                    <span className="tool-tip">90%</span>
-                  </span>
-                </div>
-              </div>
 
-              <div className="skill-box">
-                <span className="title">PYTHON</span>
-                <div className="skill-bar">
-                  <span className="skill-per python">
-                    <span className="tool-tip">85%</span>
-                  </span>
-                </div>
-              </div>
-
-              <div className="skill-box">
-                <span className="title">JAVASCRIPT</span>
-                <div className="skill-bar">
-                  <span className="skill-per js">
-                    <span className="tool-tip">80%</span>
-                  </span>
-                </div>
-              </div>
-
-              <div className="skill-box">
-                <span className="title">CSS</span>
-                <div className="skill-bar">
-                  <span className="skill-per css">
-                    <span className="tool-tip">75%</span>
-                  </span>
-                </div>
-              </div>
-
-              <div className="skill-box">
-                <span className="title">GIT</span>
-                <div className="skill-bar">
-                  <span className="skill-per git">
-                    <span className="tool-tip">95%</span>
-                  </span>
-                </div>
+          <div className="skills">
+            <div className="skill-box">
+              <span className="title">GIT</span>
+              <div className="skill-bar">
+                <span className="skill-per git">
+                  <span className="tool-tip">95%</span>
+                </span>
               </div>
             </div>
+
+
+
+            <div className="skill-box">
+              <span className="title">HTML</span>
+              <div className="skill-bar">
+                <span className="skill-per html">
+                  <span className="tool-tip">90%</span>
+                </span>
+              </div>
+            </div>
+
+
+
+            <div className="skill-box">
+              <span className="title">PYTHON</span>
+              <div className="skill-bar">
+                <span className="skill-per python">
+                  <span className="tool-tip">85%</span>
+                </span>
+              </div>
+            </div>
+
+            <div className="skill-box">
+              <span className="title">JAVASCRIPT</span>
+              <div className="skill-bar">
+                <span className="skill-per js">
+                  <span className="tool-tip">80%</span>
+                </span>
+              </div>
+            </div>
+
+            <div className="skill-box">
+              <span className="title">CSS</span>
+              <div className="skill-bar">
+                <span className="skill-per css">
+                  <span className="tool-tip">75%</span>
+                </span>
+              </div>
+            </div>
+
+
+
           </div>
+
         </div>
       </section>
     </main>

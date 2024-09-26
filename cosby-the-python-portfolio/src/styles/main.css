@@ -52,7 +52,7 @@ html {
 }
 
 h1 {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 /*
 General wrapper to position everything
@@ -73,8 +73,8 @@ General wrapper to position everything
     position: relative;
     top: 50%;
     /* transform: translateY(-50%); */
-    text-align: center;
-    left: 4%;
+    text-align: left;
+    left: 1%;
 
     /*
 
@@ -98,4 +98,41 @@ General wrapper to position everything
     font-size: 2em;
     line-height: 1.2;
     color: var(--text-color);
+}
+
+/* about and contact row and column*/
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    /* align-items: stretch; */
+    /* display: block;
+    margin: 0 auto; */
+
+}
+
+.col {
+    display: flex;
+    width: 50%;
+
+    /* display: inline-block;
+    margin: 20px; */
+}
+
+
+/* all bottons */
+.btn {
+  background-color: #8749f2;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
 }
