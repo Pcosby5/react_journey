@@ -41,16 +41,15 @@
     /* margin-bottom: 60px; */
 }
 
-.about-info h1, p {
+.about-info p {
     margin-bottom: 20px;
 }
 
 .about-me .profile {
     border-radius: 100%;
     position: absolute;
-    bottom: 100%;
-
-    left: 20px;
+    /* bottom: 100%; */
+    left: -20px;
     z-index: 1;
     background-color: #fff;
     max-width: 80px;
