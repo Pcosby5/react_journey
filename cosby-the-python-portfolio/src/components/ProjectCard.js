@@ -5,11 +5,11 @@ const ProjectCard = () => {
   return (
     <main className="wrapper">
         <section className="section" id="projects">
-            <div className="project-container">
-                <div className="top-header">
-                    <h1>Projects</h1>
-                </div>
+            <div className="top-header">
+                <h1>Projects</h1>
+            </div>
 
+            <div className="project-container">
                 <div className="project-box">
                     <i className="uil-briefcase-alt"></i>
                     <h3>Completed</h3>
