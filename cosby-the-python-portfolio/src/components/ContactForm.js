@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/contact.css'
 
 const ContactForm = () => {
   return (
@@ -26,8 +27,8 @@ const ContactForm = () => {
                         </div>
 
                         <div className="text-area">
-                            <input type="text" id="input-subject" placeholder="subject"></input>
-                            <textarea placeholder="message"></textarea>
+                            <input className="input-subject" type="text" placeholder="subject"></input>
+                            <textarea id="input-text" placeholder="message"></textarea>
                         </div>
 
                         <div className="form-btn">
