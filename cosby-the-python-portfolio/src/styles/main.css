@@ -26,12 +26,13 @@
 }
 
 body {
+    /* light mode*/
     background: var(--body-color);
 }
 
 /*--dark mode--*/
 
-body.dark {
+body.dark-mode {
     --body-color: #202425;
 
     --box-color: #fff;
@@ -158,8 +159,10 @@ General wrapper to position everything
     /* .nav-menu-btn {
         display: none;
     } */
-    .nav-menu.responsive {
+    .nav-menu.open {
         left: 0;
+        display: block;
+
     }
     .nav-menu {
         position: fixed;
@@ -280,3 +283,4 @@ General wrapper to position everything
     }
 }
 
+/*so how about the toggle-switch implementation of the moon-sun in the mode*/
