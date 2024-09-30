@@ -47,7 +47,9 @@ body.dark-mode {
     --mode-color: #fff;
 
 }
-
+body.dark-mode .typedText {
+    color: white;
+}
 html {
     scroll-behavior: smooth;
 }

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { useState, useEffect } from 'react';  // Import useState and useEffect
+import { useState, useEffect } from 'react';
 import './Header.css';  // Import your custom styles
 
 function Header() {
@@ -9,17 +9,18 @@ function Header() {
   // State for dark/light mode
   const [isDarkMode, setIsDarkMode] = useState(() => {
     // Check localStorage for the saved theme preference
-    return localStorage.getItem('theme') === 'dark' ? true : false;
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme === 'dark' ? true : false;
   });
 
   // Toggle menu open/close
-  const myMenuFunction = () => {
+  const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   // Toggle dark/light mode
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode(prevMode => !prevMode);
   };
 
   // Apply dark or light theme class to the body based on state
@@ -53,14 +54,27 @@ function Header() {
 
         {/* dark mode switch */}
         <div className="mode">
-          <div className="moon-sun" id="toggle-switch" onClick={toggleDarkMode}>
-            <i className={`fa ${isDarkMode ? 'fa-sun' : 'fa-moon'}`} id={isDarkMode ? 'sun' : 'moon'}></i>
-          </div>
+          <button
+            className="moon-sun"
+            id="toggle-switch"
+            onClick={toggleDarkMode}
+            aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
+          >
+            {isDarkMode ? (
+              <i className="fa fa-sun" id="sun" style={{ color: 'gray' }}></i>
+            ) : (
+              <i className="fa fa-moon" id="moon" style={{ color: 'gray' }}></i>
+            )}
+          </button>
         </div>
 
-        <div className='nav-menu-btn'>
-          <i className='uil uil-bars' onClick={myMenuFunction}></i>
-        </div>
+        <button
+          className='nav-menu-btn'
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle navigation menu">
+          <i className='uil uil-bars'></i>
+        </button>
 
       </nav>
     </header>
