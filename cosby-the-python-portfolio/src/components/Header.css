@@ -68,15 +68,25 @@ nav ul li {
     background: var(--first-color);
 }
 
-.nav-menu-btn {
+/* .nav-menu-btn {
     display: none;
-}
+} */
 
 .nav-menu-btn i {
-    font-size: 30px;
-    cursor: pointer;
-    color: var(--nav-icon);
+  font-size: 24px; /* Adjust this value if necessary */
+  color: var(--color-white); /* Ensure the icon color contrasts with the background */
 }
+
+button {
+    border: none;
+    background: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+
 
 .mode {
     display: flex;

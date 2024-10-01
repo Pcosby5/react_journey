@@ -69,11 +69,11 @@ function Header() {
         </div>
 
         <button
-          className='nav-menu-btn'
+          className="nav-menu-btn"
           onClick={toggleMenu}
           aria-expanded={isMenuOpen}
           aria-label="Toggle navigation menu">
-          <i className='uil uil-bars'></i>
+          <i className="uil uil-bars"></i>
         </button>
 
       </nav>

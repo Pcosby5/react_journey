@@ -47,6 +47,13 @@ body.dark-mode {
     --mode-color: #fff;
 
 }
+body.dark-mode,
+.nav-menu-btn i {
+  font-size: 24px; /* Adjust this value if necessary */
+  color: var(--nav-icon); /* Ensure the icon color contrasts with the background */
+}
+
+
 body.dark-mode .typedText {
     color: white;
 }
@@ -158,9 +165,6 @@ General wrapper to position everything
 /*-----responsiveness on small screens like iphone*/
 
 @media only screen and (max-width: 900px) {
-    /* .nav-menu-btn {
-        display: none;
-    } */
     .nav-menu.open {
         left: 0;
         display: block;
