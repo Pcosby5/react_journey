@@ -49,8 +49,8 @@ body.dark-mode {
 }
 body.dark-mode,
 .nav-menu-btn i {
-  font-size: 24px; /* Adjust this value if necessary */
-  color: var(--nav-icon); /* Ensure the icon color contrasts with the background */
+  /* font-size: 24px;  */
+  color: var(--nav-icon);
 }
 
 
@@ -64,17 +64,6 @@ html {
 h1 {
     margin-top: 3em;
 }
-/*
-General wrapper to position everything
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-    padding-inline: 2.5vw;
-
-} */
 
 
 .wrapper {
@@ -82,15 +71,9 @@ General wrapper to position everything
     margin: 0 auto;
     position: relative;
     top: 50%;
-    /* transform: translateY(-50%); */
     text-align: left;
     left: 1%;
 
-    /*
-
-
-
-     */
 }
 
 
@@ -116,9 +99,7 @@ General wrapper to position everything
     justify-content: space-between;
     width: 100%;
     gap: 40px;
-    /* align-items: stretch; */
-    /* display: block;
-    margin: 0 auto; */
+
 
 }
 
@@ -126,8 +107,6 @@ General wrapper to position everything
     display: flex;
     width: 50%;
 
-    /* display: inline-block;
-    margin: 20px; */
 }
 
 
@@ -194,6 +173,11 @@ General wrapper to position everything
         display: flex;
         align-items: center;
         justify-content: center;
+
+    }
+
+    .nav-menu-btn i {
+        font-size: 34px;
     }
 
     .hero-content {
@@ -289,4 +273,4 @@ General wrapper to position everything
     }
 }
 
-/*so how about the toggle-switch implementation of the moon-sun in the mode*/
+

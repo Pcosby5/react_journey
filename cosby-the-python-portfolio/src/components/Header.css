@@ -68,14 +68,14 @@ nav ul li {
     background: var(--first-color);
 }
 
-/* .nav-menu-btn {
+.nav-menu-btn {
     display: none;
-} */
-
-.nav-menu-btn i {
-  font-size: 24px; /* Adjust this value if necessary */
-  color: var(--color-white); /* Ensure the icon color contrasts with the background */
 }
+/*
+.nav-menu-btn i {
+  font-size: 24px;
+  color: var(--color-white);
+} */
 
 button {
     border: none;
